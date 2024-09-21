@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./tailwindstyle.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="">
+    <header
+      class="min-h-[90vh] text-white text-center py-3 px-2 header-hero w-[100%] sm:container sm:min-h-96 sm:max-w-[100%] lg:relative"
+    >
+      <div class="relative">
+        <nav class="flex justify-between items-center py-[0px] px-[10px]">
+          <span class="font-black min-w-14 text-lg">sunnyside</span>
+          <ul
+            class="nav-links list-none m-0 p-0 text-xs hidden lg:flex lg:flex-row lg:bg-transparent"
+          >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" class="">Contact</a></li>
+          </ul>
+          <div class="text-[24px] cursor-pointer lg:hidden" id="mobileMenu">
+            &#9776;
+          </div>
+        </nav>
+        <div class="mt-[70px] relative sm:relative">
+          <h1
+            class="text-center text-4xl font-black uppercase tracking-widest mt-5"
+          >
+            We are creatives
+          </h1>
+          <!-- <svg
+            class="mt-5 flex absolute left-[49%] top-48 sm:absolute sm:left-[49%] sm:top-48"
+            width="36"
+            height="114"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              stroke="#FFF"
+              stroke-width="6"
+              fill="none"
+              fill-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 3v100M3 95.484l15 15 15-15" />
+            </g>
+          </svg> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="container grid grid-cols-1 h-full bg-white max-w-full sm:container sm:grid sm:grid-cols-1 sm:h-full sm:max-w-full lg:container lg:grid lg:grid-cols-2 lg:h-full lg:max-w-full"
+      >
+        <div
+          class="max-w-[100%] text-center grid place-content-center py-16 px-10"
+        >
+          <h1 class="split">Transform your <span class="block">brand</span></h1>
+          <p class="split-p">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+        <div class="order-first sm:order-first lg:order-last">
+          <figure>
+            <img
+              class="block w-full h-auto sm:container sm:block sm:max-w-full sm:h-auto"
+              src="images/desktop/image-transform.jpg"
+              alt="transform your brand"
+            />
+          </figure>
+        </div>
+      </div>
+
+      <div
+        class="container grid grid-cols-1 bg-white max-w-full h-full sm:container sm:grid sm:grid-cols-1 sm:h-full sm:max-w-full lg:container lg:grid lg:grid-cols-2 lg:h-full lg:max-w-full"
+      >
+        <div class="">
+          <figure>
+            <img
+              class="block w-full h-auto"
+              src="images/desktop/image-stand-out.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+        <div
+          class="max-w-[100%] text-center grid place-content-center py-16 px-10"
+        >
+          <h2 class="split">
+            Stand out to the right <span class="block">audience</span>
+          </h2>
+          <p class="split-p">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+      </div>
+
+      <div
+        class="container grid grid-cols-1 max-w-full sm:container sm:grid sm:grid-cols-1 sm:max-w-full sm:h-full sm:min-h-96 lg:container lg:grid lg:grid-cols-2 lg:h-full lg:max-w-full"
+      >
+        <div
+          class="panel bg-cover bg-center graphic-design sm:bg-cover sm:bg-center sm:min-h-96"
+          style="
+            background-image: url('images/desktop/image-graphic-design.jpg');
+          "
+        >
+          <div class="p-14">
+            <h2 class="text-2xl font-black mb-3">Graphic Design</h2>
+            <p class="text-sm">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div
+          class="panel bg-cover bg-center photography sm:bg-cover sm:bg-center sm:min-h-96"
+          style="background-image: url('images/desktop/image-photography.jpg')"
+        >
+          <div class="p-14">
+            <h2 class="text-2xl font-black mb-3">Photography</h2>
+            <p class="text-sm">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container flex flex-col items-center p-5 py-10 mx-auto max-w-full"
+      >
+        <h2 class="mb-5 text-lg font-bold tracking-[.25em] pt-14 client">
+          CLIENT TESTIMONIALS
+        </h2>
+        <div
+          class="flex flex-col sm:flex sm:flex-row sm:max-w-full max-w-full pt-3 pb-20"
+        >
+          <div class="testimonial">
+            <img src="images/image-emily.jpg" alt="" />
+            <blockquote class="client-block py-5">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </blockquote>
+            <h3 class="client-h3">Emily R.</h3>
+            <p class="client text-sm">Marketing Director</p>
+          </div>
+          <div class="testimonial">
+            <img src="images/image-thomas.jpg" alt="" />
+            <blockquote class="client-block py-5">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </blockquote>
+            <h3 class="client-h3">Thomas S.</h3>
+            <p class="client text-sm">Chief Operating Officer</p>
+          </div>
+          <div class="testimonial">
+            <img src="images/image-jennie.jpg" alt="" />
+            <blockquote class="client-block py-5">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </blockquote>
+            <h3 class="client-h3">Jennie F.</h3>
+            <p class="client text-sm">Business Owner</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container grid grid-cols-2 max-w-full sm:container sm:flex sm:flex-row sm:max-w-full"
+      >
+        <div>
+          <figure>
+            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" />
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="images/desktop/image-gallery-orange.jpg" alt="" />
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="images/desktop/image-gallery-cone.jpg" alt="" />
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div
+        class="container footer flex flex-col place-content-center items-center p-5 max-w-full min-h-[20vh]"
+      >
+        <div class="font-black min-w-14 text-lg mt-4">sunnyside</div>
+        <nav class="">
+          <ul class="list-none flex gap-9 my-[20px] mx-0 p-0 text-xs">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Services</a></li>
+            <li><a href="#" class="hover:text-white">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="flex gap-[15px] my-5">
+          <a href="#"><img src="images/icon-facebook.svg" alt="" /></a
+          ><a href="#"><img src="images/icon-instagram.svg" alt="" /></a
+          ><a href="#"><img src="images/icon-twitter.svg" alt="" /></a
+          ><a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Peter Ebimobowei June</a>.
+      </div>
+    </footer>
+
+    <script src="sunny.js"></script>
+  </body>
+</html>
