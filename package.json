@@ -4,12 +4,16 @@
   "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "tailwind.config.js",
   "scripts": {
-   "build": "npx tailwindcss -i sunnyside.css -o ./Build/css/sunny.css --watch",
-   "prettier": "npx prettier --write **/*.html"
+    "build": "npx tailwindcss -i sunnyside.css -o ./Build/css/sunny.css --watch",
+    "prettier": "npx prettier --write **/*.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.6.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47"
   }
 }
