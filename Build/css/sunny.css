@@ -558,229 +558,6 @@ video {
   display: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  margin: 0 auto;
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-}
-
-h1,
-  h2,
-  h3 {
-  font-family: "Fraunces", sans-serif;
-  font-weight: 700 900;
-}
-
-h2 {
-  color: hsl(213, 9%, 39%);
-}
-
-p {
-  font-family: "Barlow", sans-serif;
-  color: hsl(212, 27%, 19%);
-}
-
-.header-hero {
-  background-image: url("images/mobile/image-header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media screen and (min-width: 640px) {
-  .header-hero {
-    background-image: url("images/desktop/image-header.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .header-hero {
-    background-image: url("images/desktop/image-header.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links{
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    z-index: 10;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    --tw-text-opacity: 1;
-    color: rgb(30 41 59 / var(--tw-text-opacity));
-  }
-
-  @media (min-width: 1024px){
-    .nav-links{
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity));
-    }
-  }
-
-  .nav-links {
-    transition: transform 0.3s ease-in-out;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-.nav-links li{
-  margin-left: 20px;
-  padding: 1.25rem;
-}
-
-.nav-links a{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-decoration-line: none;
-}
-
-.nav-links a:hover{
-  border-radius: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-  font-family: Fraunces;
-  font-weight: 900;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-@media (min-width: 1024px){
-  .nav-links a:hover{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-}
-
-.split {
-  color: hsl(212, 27%, 19%);
-  margin-bottom: 1rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.split-p{
-  line-height: 1.25rem;
-  color: hsl(232, 10%, 55%);
-}
-
-.learn-more{
-  margin-top: 1.25rem;
-  display: inline;
-  border-radius: 0.375rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  font-family: Fraunces;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration-line: none;
-  color: hsl(212, 27%, 19%);
-}
-
-.panel{
-  box-sizing: border-box;
-  min-height: 80vh;
-  min-width: 300px;
-  place-content: end;
-  padding: 20px;
-  text-align: center;
-}
-
-.graphic-design,
-  .graphic-design p,
-  .graphic-design h2 {
-  color: hsl(167, 40%, 24%);
-}
-
-.photography,
-  .photography p,
-  .photography h2 {
-  color: hsl(198, 62%, 26%);
-}
-
-.testimonial{
-  margin: 10px;
-  max-width: 300px;
-  text-align: center;
-}
-
-.testimonial img{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.testimonial p{
-  margin: 0px;
-  font-style: italic;
-}
-
-.testimonial h3 {
-  margin: 10px 0 5px;
-}
-
-.testimonial blockquote{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.client {
-  color: hsl(210, 4%, 67%);
-}
-
-.client-block {
-  color: hsl(232, 10%, 55%);
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.client-h3 {
-  color: hsl(212, 27%, 19%);
-  font-weight: 700;
-}
-
-.footer {
-  background-color: hsla(168, 55%, 46%, 0.836);
-  color: hsl(167, 40%, 24%);
-}
-
 .container{
   width: 100%;
 }
@@ -821,6 +598,14 @@ p {
   }
 }
 
+.visible{
+  visibility: visible;
+}
+
+.collapse{
+  visibility: collapse;
+}
+
 .absolute{
   position: absolute;
 }
@@ -839,6 +624,10 @@ p {
 
 .order-first{
   order: -9999;
+}
+
+.order-last{
+  order: 9999;
 }
 
 .m-0{
@@ -889,12 +678,24 @@ p {
   display: block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -907,6 +708,10 @@ p {
 
 .h-full{
   height: 100%;
+}
+
+.min-h-96{
+  min-height: 24rem;
 }
 
 .min-h-\[20vh\]{
@@ -937,8 +742,16 @@ p {
   max-width: 100%;
 }
 
+.flex-grow{
+  flex-grow: 1;
+}
+
 .grow{
   flex-grow: 1;
+}
+
+.border-collapse{
+  border-collapse: collapse;
 }
 
 .transform{
@@ -947,6 +760,10 @@ p {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .list-none{
@@ -959,6 +776,10 @@ p {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -983,6 +804,14 @@ p {
 
 .gap-\[15px\]{
   gap: 15px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-white{
@@ -1107,6 +936,10 @@ p {
   text-transform: uppercase;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .tracking-\[\.25em\]{
   letter-spacing: .25em;
 }
@@ -1120,10 +953,20 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px){
-  .lg\:hidden {
-    display: none;
-  }
+.underline{
+  text-decoration-line: underline;
+}
+
+.outline{
+  outline-style: solid;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 640px){
@@ -1326,3 +1169,4 @@ p {
     background-color: transparent;
   }
 }
+
