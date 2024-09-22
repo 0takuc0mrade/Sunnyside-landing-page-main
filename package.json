@@ -4,7 +4,7 @@
   "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "tailwind.config.js",
   "scripts": {
-   "build": "npx tailwindcss -i ./src/sunnyside.css -o ./Build/css/sunny.css --watch",
+   "build": "npx tailwindcss -i sunnyside.css -o ./Build/css/sunny.css --watch",
    "prettier": "npx prettier --write **/*.html"
   },
   "author": "",
