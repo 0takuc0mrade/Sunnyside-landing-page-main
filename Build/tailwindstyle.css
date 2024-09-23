@@ -606,10 +606,18 @@ p {
   text-align: center;
 }
 
+.graphic-design {
+  background-image: url("images/desktop/image-graphic-design.jpg");
+}
+
 .graphic-design,
   .graphic-design p,
   .graphic-design h2 {
   color: hsl(167, 40%, 24%);
+}
+
+.photography {
+  background-image: url("images/desktop/image-photography.jpg");
 }
 
 .photography,
@@ -821,6 +829,14 @@ p {
   }
 }
 
+.visible{
+  visibility: visible;
+}
+
+.collapse{
+  visibility: collapse;
+}
+
 .absolute{
   position: absolute;
 }
@@ -839,6 +855,10 @@ p {
 
 .order-first{
   order: -9999;
+}
+
+.order-last{
+  order: 9999;
 }
 
 .m-0{
@@ -889,12 +909,24 @@ p {
   display: block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -917,6 +949,10 @@ p {
   min-height: 90vh;
 }
 
+.min-h-96{
+  min-height: 24rem;
+}
+
 .w-\[100\%\]{
   width: 100%;
 }
@@ -937,8 +973,16 @@ p {
   max-width: 100%;
 }
 
+.flex-grow{
+  flex-grow: 1;
+}
+
 .grow{
   flex-grow: 1;
+}
+
+.border-collapse{
+  border-collapse: collapse;
 }
 
 .transform{
@@ -947,6 +991,10 @@ p {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .list-none{
@@ -959,6 +1007,10 @@ p {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -985,9 +1037,17 @@ p {
   gap: 15px;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-cover{
@@ -1107,6 +1167,10 @@ p {
   text-transform: uppercase;
 }
 
+.italic{
+  font-style: italic;
+}
+
 .tracking-\[\.25em\]{
   letter-spacing: .25em;
 }
@@ -1118,6 +1182,26 @@ p {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
+}
+
+.outline{
+  outline-style: solid;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 1024px){

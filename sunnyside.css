@@ -103,10 +103,18 @@
     @apply min-w-[300px] min-h-[80vh] place-content-end text-center p-[20px] box-border;
   }
 
+  .graphic-design {
+    background-image: url("images/desktop/image-graphic-design.jpg");
+  }
+
   .graphic-design,
   .graphic-design p,
   .graphic-design h2 {
     color: hsl(167, 40%, 24%);
+  }
+
+  .photography {
+    background-image: url("images/desktop/image-photography.jpg");
   }
 
   .photography,
